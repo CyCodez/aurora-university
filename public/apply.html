@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Admission Application | Aurora University
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/apply.js">
+  </script>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="container nav-inner">
+    <a class="brand" href="index.html">
+     <img alt="Aurora University crest" src="images/aurora-logo.png"/>
+     <span>
+      Aurora University
+      <small>
+       Student Portal
+      </small>
+     </span>
+    </a>
+    <nav class="nav-links">
+     <a href="courses.html">
+      Courses
+     </a>
+     <a href="dashboard.html">
+      Dashboard
+     </a>
+     <a href="index.html">
+      Home
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <div class="form-wrap">
+    <section class="form-card">
+     <p class="eyebrow">
+      ADMISSIONS
+     </p>
+     <h1>
+      Application form
+     </h1>
+     <p class="muted">
+      Complete the details below and review your information before submitting your application.
+     </p>
+     <form id="application-form">
+      <label for="applicantName">
+       Applicant full name
+      </label>
+      <input id="applicantName" maxlength="100" required=""/>
+      <label for="applicantEmail">
+       Applicant email
+      </label>
+      <input id="applicantEmail" required="" type="email"/>
+      <label for="age">
+       Age
+      </label>
+      <input id="age" max="100" min="16" required="" type="number"/>
+      <label for="courseId">
+       Choose a course
+      </label>
+      <select id="courseId" required="">
+       <option value="">
+        Loading courses…
+       </option>
+      </select>
+      <p class="notice" id="fee">
+       Estimated fee: —
+      </p>
+      <label for="statementText">
+       Why are you interested in this course?
+      </label>
+      <textarea id="statementText" maxlength="1000" minlength="10" required="" rows="4"></textarea>
+      <div class="card hidden" id="review">
+      </div>
+      <p class="form-message" id="form-message" role="status">
+      </p>
+      <button class="button button-light" id="review-button" type="button">
+       Review application
+      </button>
+      <button class="button button-primary" disabled="" id="submit-button" type="submit">
+       Submit application
+      </button>
+     </form>
+    </section>
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <p>
+     © 2026 Aurora University. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
+

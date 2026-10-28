@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Login | Aurora University
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/login.js">
+  </script>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="container nav-inner">
+    <a class="brand" href="index.html">
+     <img alt="Aurora University crest" src="images/aurora-logo.png"/>
+     <span>
+      Aurora University
+      <small>
+       Learn · Grow · Lead
+      </small>
+     </span>
+    </a>
+    <nav class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="courses.html">
+      Courses
+     </a>
+     <a href="signup.html">
+      Sign up
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <div class="form-wrap">
+    <section class="form-card">
+     <p class="eyebrow">
+      WELCOME BACK
+     </p>
+     <h1>
+      Log in
+     </h1>
+     <p class="muted">
+      Enter the email and password you registered with.
+     </p>
+     <form id="login-form" novalidate="">
+      <label for="email">
+       Email address
+      </label>
+      <input autocomplete="email" id="email" name="email" required="" type="email"/>
+      <label for="password">
+       Password
+      </label>
+      <div class="password-wrap">
+       <input autocomplete="current-password" id="password" name="password" required="" type="password"/>
+       <button class="button button-light" id="toggle-password" type="button">
+        Show
+       </button>
+      </div>
+      <p class="form-message" id="form-message" role="status">
+      </p>
+      <button class="button button-primary" id="login-button" type="submit">
+       Log in
+      </button>
+     </form>
+     <p>
+      <button class="button button-light" id="forgot-button" type="button">
+       Forgot password?
+      </button>
+     </p>
+     <p class="muted">
+      New here?
+      <a href="signup.html">
+       Create an account
+      </a>
+     </p>
+    </section>
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <p>
+     © 2026 Aurora University. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
+

@@ -1,0 +1,17 @@
+{
+  "name": "aurora-university-website",
+  "version": "1.0.0",
+  "description": "University website with programme catalogue, student accounts and admissions management",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "mongodb": "^6.12.0",
+    "dotenv": "^16.4.7"
+  }
+}

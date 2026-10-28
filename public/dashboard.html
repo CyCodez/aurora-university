@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Student Dashboard | Aurora University
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/dashboard.js">
+  </script>
+  <script defer="" src="js/common.js">
+  </script>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="container nav-inner">
+    <a class="brand" href="index.html">
+     <img alt="Aurora University crest" src="images/aurora-logo.png"/>
+     <span>
+      Aurora University
+      <small>
+       Student Portal
+      </small>
+     </span>
+    </a>
+    <nav class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="courses.html">
+      Courses
+     </a>
+     <a href="apply.html">
+      Apply
+     </a>
+     <button class="button button-light" id="logout-button">
+      Log out
+     </button>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="dashboard-top">
+    <div>
+     <p class="eyebrow">
+      STUDENT PORTAL
+     </p>
+     <h1>
+      Welcome,
+      <span id="student-name">
+       student
+      </span>
+     </h1>
+     <p class="muted">
+      Your account and application information in one place.
+     </p>
+    </div>
+    <a class="button button-primary" href="courses.html">
+     Explore courses
+    </a>
+   </section>
+   <p class="notice hidden" id="page-message">
+   </p>
+   <section class="summary-grid">
+    <article class="summary-card">
+     <span>
+      Account email
+     </span>
+     <strong id="student-email">
+      —
+     </strong>
+    </article>
+    <article class="summary-card">
+     <span>
+      Applications submitted
+     </span>
+     <strong id="application-count">
+      0
+     </strong>
+    </article>
+    <article class="summary-card">
+     <span>
+      Latest application
+     </span>
+     <strong id="latest-status">
+      None yet
+     </strong>
+    </article>
+   </section>
+   <section class="dashboard-grid">
+    <article class="card">
+     <p class="eyebrow">
+      ADMISSION TRACKER
+     </p>
+     <h2>
+      My applications
+     </h2>
+     <div class="table-wrap">
+      <table>
+       <thead>
+        <tr>
+         <th>
+          Reference
+         </th>
+         <th>
+          Course
+         </th>
+         <th>
+          Estimated fee
+         </th>
+         <th>
+          Status
+         </th>
+         <th>
+          Action
+         </th>
+        </tr>
+       </thead>
+       <tbody id="applications-body">
+        <tr>
+         <td colspan="5">
+          Loading…
+         </td>
+        </tr>
+       </tbody>
+      </table>
+     </div>
+     <p class="muted">
+      Review your submitted applications and their current status here.
+     </p>
+    </article>
+    <article class="card">
+     <p class="eyebrow">
+      ACCOUNT SETTINGS
+     </p>
+     <h2>
+      My profile
+     </h2>
+     <form id="profile-form">
+      <label for="fullName">
+       Full name
+      </label>
+      <input id="fullName" maxlength="100" minlength="2" required=""/>
+      <label for="phone">
+       Phone number
+      </label>
+      <input id="phone" required=""/>
+      <p class="form-message" id="profile-message" role="status">
+      </p>
+      <button class="button button-primary" id="save-button">
+       Save changes
+      </button>
+     </form>
+    </article>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <p>
+     © 2026 Aurora University. All rights reserved.
+    </p>
+    <p>
+     Learn · Grow · Lead
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
+

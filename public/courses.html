@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Courses | Aurora University
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/common.js">
+  </script>
+  <script defer="" src="js/courses.js">
+  </script>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="container nav-inner">
+    <a class="brand" href="index.html">
+     <img alt="Aurora University crest" src="images/aurora-logo.png"/>
+     <span>
+      Aurora University
+      <small>
+       Learn · Grow · Lead
+      </small>
+     </span>
+    </a>
+    <nav class="nav-links" data-nav-links="">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="courses.html">
+      Courses
+     </a>
+     <a href="admissions.html">
+      Admissions
+     </a>
+     <a data-guest="" href="login.html">
+      Login
+     </a>
+     <a class="button button-primary" data-guest="" href="signup.html">
+      Sign up
+     </a>
+     <a class="hidden" data-user="" href="dashboard.html">
+      Dashboard
+     </a>
+     <span class="hidden" data-user="" data-user-name="">
+     </span>
+     <button class="button button-light hidden" data-user="" onclick="logoutNav()">
+      Log out
+     </button>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="page-head">
+    <p class="eyebrow">
+     COURSE CATALOGUE
+    </p>
+    <h1>
+     Find a programme that fits
+    </h1>
+    <p>
+     Search, filter and compare programmes. Fees shown are estimated annual tuition.
+    </p>
+   </section>
+   <div class="toolbar">
+    <input aria-label="Search courses" id="search" placeholder="Search course name…" type="search"/>
+    <select aria-label="Filter by department" id="department">
+     <option value="">
+      All departments
+     </option>
+    </select>
+   </div>
+   <div class="compare-box hidden" id="compare-box">
+   </div>
+   <p class="muted" id="course-message">
+    Loading courses…
+   </p>
+   <div class="grid-3" id="course-list">
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <p>
+     © 2026 Aurora University. All rights reserved.
+    </p>
+    <p>
+     Contact admissions for current fee information.
+    </p>
+   </div>
+  </footer>
+  <script>
+   async function logoutNav() {
+    await fetch('/api/logout', { method: 'POST' });
+    location.href = 'index.html';
+   }
+  </script>
+ </body>
+</html>
+

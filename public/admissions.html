@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Admissions | Aurora University
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/common.js">
+  </script>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="container nav-inner">
+    <a class="brand" href="index.html">
+     <img alt="Aurora University crest" src="images/aurora-logo.png"/>
+     <span>
+      Aurora University
+      <small>
+       Learn · Grow · Lead
+      </small>
+     </span>
+    </a>
+    <nav class="nav-links" data-nav-links="">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="courses.html">
+      Courses
+     </a>
+     <a href="admissions.html">
+      Admissions
+     </a>
+     <a data-guest="" href="login.html">
+      Login
+     </a>
+     <a class="button button-primary" data-guest="" href="signup.html">
+      Sign up
+     </a>
+     <a class="hidden" data-user="" href="dashboard.html">
+      Dashboard
+     </a>
+     <span class="hidden" data-user="" data-user-name="">
+     </span>
+     <button class="button button-light hidden" data-user="" onclick="logoutNav()">
+      Log out
+     </button>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <section class="page-head">
+    <p class="eyebrow">
+     ADMISSIONS
+    </p>
+    <h1>
+     How to apply
+    </h1>
+    <p>
+     Find the information you need to prepare and submit your admission application.
+    </p>
+   </section>
+   <div class="grid-2">
+    <article class="card">
+     <h3>
+      Before you begin
+     </h3>
+     <ul>
+      <li>
+       Create a student account with a valid email address.
+      </li>
+      <li>
+       Choose a programme from the course catalogue.
+      </li>
+      <li>
+       Prepare your basic contact details and a short personal statement.
+      </li>
+      <li>
+       Review your application before submitting it.
+      </li>
+     </ul>
+    </article>
+    <article class="card">
+     <h3>
+      Application requirements
+     </h3>
+     <ul>
+      <li>
+       Applicants should be at least 16 years old.
+      </li>
+      <li>
+       Full name and valid email address.
+      </li>
+      <li>
+       A selected programme.
+      </li>
+      <li>
+       A short statement explaining your interest in the programme.
+      </li>
+     </ul>
+     <p class="muted">
+      Applicants should confirm programme-specific requirements with the admissions office.
+     </p>
+    </article>
+   </div>
+   <section class="section">
+    <div class="grid-3">
+     <article class="card">
+      <h3>
+       1. Create an account
+      </h3>
+      <p>
+       Register with your name, email and phone number.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       2. Select a course
+      </h3>
+      <p>
+       Search the course catalogue and check the estimated fee.
+      </p>
+     </article>
+     <article class="card">
+      <h3>
+       3. Submit and track
+      </h3>
+      <p>
+       Complete the application form and follow its status in your dashboard.
+      </p>
+     </article>
+    </div>
+    <div class="hero-actions">
+     <a class="button button-primary" href="signup.html">
+      Create account
+     </a>
+     <a class="button button-light" href="courses.html">
+      Explore courses
+     </a>
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <p>
+     © 2026 Aurora University. All rights reserved.
+    </p>
+    <p>
+     Learn · Grow · Lead
+    </p>
+   </div>
+  </footer>
+  <script>
+   async function logoutNav() {
+    await fetch('/api/logout', { method: 'POST' });
+    location.href = 'index.html';
+   }
+  </script>
+ </body>
+</html>
+

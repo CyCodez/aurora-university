@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Create account | Aurora University
+  </title>
+  <link href="css/style.css" rel="stylesheet"/>
+  <script defer="" src="js/common.js">
+  </script>
+  <script defer="" src="js/signup.js">
+  </script>
+ </head>
+ <body>
+  <header class="navbar">
+   <div class="container nav-inner">
+    <a class="brand" href="index.html">
+     <img alt="Aurora University crest" src="images/aurora-logo.png"/>
+     <span>
+      Aurora University
+      <small>
+       Learn · Grow · Lead
+      </small>
+     </span>
+    </a>
+    <nav class="nav-links">
+     <a href="index.html">
+      Home
+     </a>
+     <a href="courses.html">
+      Courses
+     </a>
+     <a href="login.html">
+      Login
+     </a>
+    </nav>
+   </div>
+  </header>
+  <main class="container">
+   <div class="form-wrap">
+    <section class="form-card">
+     <p class="eyebrow">
+      STUDENT ACCOUNT
+     </p>
+     <h1>
+      Create your account
+     </h1>
+     <p class="muted">
+      Use your details to access the student portal.
+     </p>
+     <form id="signup-form" novalidate="">
+      <label for="fullName">
+       Full name
+      </label>
+      <input autocomplete="name" id="fullName" maxlength="100" minlength="2" name="fullName" required=""/>
+      <label for="email">
+       Email address
+      </label>
+      <input autocomplete="email" id="email" name="email" required="" type="email"/>
+      <label for="phone">
+       Phone number
+      </label>
+      <input id="phone" name="phone" placeholder="+234 801 234 5678" required="" type="tel"/>
+      <label for="password">
+       Password
+      </label>
+      <div class="password-wrap">
+       <input autocomplete="new-password" id="password" name="password" required="" type="password"/>
+       <button class="button button-light" data-toggle="password" type="button">
+        Show
+       </button>
+      </div>
+      <p class="help">
+       At least 8 characters with uppercase, lowercase, number and special character.
+      </p>
+      <label for="confirmPassword">
+       Confirm password
+      </label>
+      <div class="password-wrap">
+       <input autocomplete="new-password" id="confirmPassword" name="confirmPassword" required="" type="password"/>
+       <button class="button button-light" data-toggle="confirmPassword" type="button">
+        Show
+       </button>
+      </div>
+      <p class="form-message" id="form-message" role="status">
+      </p>
+      <button class="button button-primary" id="submit-button" type="submit">
+       Create account
+      </button>
+     </form>
+     <p class="muted">
+      Already registered?
+      <a href="login.html">
+       Log in
+      </a>
+     </p>
+    </section>
+   </div>
+  </main>
+  <footer class="footer">
+   <div class="container footer-inner">
+    <p>
+     © 2026 Aurora University. All rights reserved.
+    </p>
+   </div>
+  </footer>
+ </body>
+</html>
+
